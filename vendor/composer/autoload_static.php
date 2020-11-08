@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
@@ -30,6 +30,12 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
         ),
+        'L' => 
+        array (
+            'Liloy\\Application\\Model\\' => 24,
+            'Liloy\\Application\\Core\\' => 23,
+            'Liloy\\Application\\Controller\\' => 29,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -41,8 +47,8 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -59,6 +65,18 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Liloy\\Application\\Model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Application/Model',
+        ),
+        'Liloy\\Application\\Core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Application/Core',
+        ),
+        'Liloy\\Application\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Application/Controller',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
