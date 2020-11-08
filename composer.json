@@ -1,0 +1,13 @@
+{
+    "name": "jack/untitled8",
+    "authors": [
+        {
+            "name": "liloysky",
+            "email": "percyk32111@gmail.com"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpunit/phpunit": "^9.4"
+    }
+}
