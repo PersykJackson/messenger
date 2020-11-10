@@ -10,7 +10,6 @@ class Registry
 {
     private static $instance = null;
     private static $routes = [];
-    private static $view;
 
     public static function getInstance(): self
     {

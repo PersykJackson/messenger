@@ -4,6 +4,7 @@
 namespace Liloy\Application\Core;
 
 use Liloy\Application\Config\Registry;
+use Liloy\Application\Error\ErrorWriter;
 
 
 class Router
@@ -11,6 +12,7 @@ class Router
         private $routes;
         private $route;
         private $uri;
+        public $error = '';
         public function __construct(string $uri)
         {
             Registry::getInstance();
@@ -27,6 +29,7 @@ class Router
                     return true;
                 }
             }
+            $this->error .= 'Incorrect route.';
             return false;
         }
         private function execute(): bool
@@ -39,8 +42,10 @@ class Router
                         $controller->$action();
                         return true;
                 }
+                $this->error .= "Method $action not exist in $class";
                 return false;
             }
+            $this->error .= "Class $class not exist";
             return false;
         }
         public function run(): bool

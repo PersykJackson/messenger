@@ -34,6 +34,7 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         array (
             'Liloy\\Application\\View\\' => 23,
             'Liloy\\Application\\Model\\' => 24,
+            'Liloy\\Application\\Error\\' => 24,
             'Liloy\\Application\\Core\\' => 23,
             'Liloy\\Application\\Controller\\' => 29,
             'Liloy\\Application\\Config\\' => 25,
@@ -75,6 +76,10 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         'Liloy\\Application\\Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Application/Model',
+        ),
+        'Liloy\\Application\\Error\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Application/Error',
         ),
         'Liloy\\Application\\Core\\' => 
         array (

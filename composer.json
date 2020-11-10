@@ -16,7 +16,8 @@
             "Liloy\\Application\\Controller\\" : "Application/Controller",
             "Liloy\\Application\\Model\\" : "Application/Model",
             "Liloy\\Application\\Config\\": "Application/Config",
-            "Liloy\\Application\\View\\" : "Application/View"
+            "Liloy\\Application\\View\\" : "Application/View",
+            "Liloy\\Application\\Error\\" : "Application/Error"
         }
     }
 }

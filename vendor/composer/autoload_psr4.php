@@ -13,6 +13,7 @@ return array(
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Liloy\\Application\\View\\' => array($baseDir . '/Application/View'),
     'Liloy\\Application\\Model\\' => array($baseDir . '/Application/Model'),
+    'Liloy\\Application\\Error\\' => array($baseDir . '/Application/Error'),
     'Liloy\\Application\\Core\\' => array($baseDir . '/Application/Core'),
     'Liloy\\Application\\Controller\\' => array($baseDir . '/Application/Controller'),
     'Liloy\\Application\\Config\\' => array($baseDir . '/Application/Config'),

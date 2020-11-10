@@ -2,7 +2,9 @@
 
 namespace Liloy\Application\Model;
 
-class Main
+use Liloy\Application\Core\Model;
+
+class Main extends Model
 {
 
 }

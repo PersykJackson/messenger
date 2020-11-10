@@ -4,7 +4,7 @@
 namespace Liloy\Application\Core;
 
 
-use Liloy\Application\Config\Registry;
+use Liloy\Application\Error\ErrorResponser;
 use Liloy\Application\View\View;
 
 class Controller
@@ -13,7 +13,7 @@ class Controller
     public $route;
     public $path;
     public $view;
-    public function __construct($route)
+    public function __construct(array $route)
     {
         $this->route = $route;
         $this->view = new View($route);
@@ -21,8 +21,8 @@ class Controller
         $model = 'Liloy\\Application\\Model\\'.ucfirst($this->route['Controller']);
         if(class_exists($model)){
             $this->model = new $model();
+        }else{
+            ErrorResponser::getError("Model $model not exist");
         }
-        $this->view->getView(['1' => 22]);
-
     }
 }

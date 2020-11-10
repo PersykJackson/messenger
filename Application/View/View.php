@@ -8,23 +8,30 @@ class View
 {
     private $route;
     private $view;
-    private $layout;
+    public $layout = 'default';
+    public $style = 'default';
 
     public function __construct($route)
     {
         $this->route = $route;
-        $this->render();
+        $this->prepare();
     }
 
-    public function render()
+    private function prepare(): void
     {
-        ob_start();
-        require_once $this->route['Controller'].'/'.$this->route['Action'].'.html';
-        $this->view = ob_get_clean();
+            ob_start();
+            require_once $this->route['Controller'].'/'.$this->route['Action'].'.php';
+            $this->view = ob_get_clean();
     }
-    public function getView($vars = [])
+    public function getView($vars = []): bool
     {
-       echo $this->view;
+       $vars['view'] = $this->view;
+       $vars['title'] = $this->route['Title'];
+       $vars['style'] = $this->style;
+       if(require_once 'layouts/'.$this->layout.'.php'){
+           return true;
+       };
+       return false;
     }
 
 }
