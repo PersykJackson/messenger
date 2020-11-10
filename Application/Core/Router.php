@@ -3,6 +3,8 @@
 
 namespace Liloy\Application\Core;
 
+use Liloy\Application\Config\Registry;
+
 
 class Router
 {
@@ -11,12 +13,13 @@ class Router
         private $uri;
         public function __construct(string $uri)
         {
-
-            $this->routes = require_once './Application/Config/Routes.php';
+            Registry::getInstance();
+            $this->routes = Registry::getRoutes();
             $this->uri = $uri;
         }
         private function prepare(): bool
         {
+
             $uri = trim($this->uri, '/');
             foreach ($this->routes as $route => $arr) {
                 if ($route === $uri) {
@@ -28,10 +31,9 @@ class Router
         }
         private function execute(): bool
         {
-            $controller = 'Application/Controller/'.ucfirst($this->route['Controller']).'Controller.php';
             $class = 'Liloy\\Application\\Controller\\'.ucfirst($this->route['Controller']).'Controller';
             $action = $this->route['Action'].'Action';
-            if(file_exists($controller)){
+            if(class_exists($class)){
                 if(method_exists($class, $action)){
                         $controller = new $class($this->route);
                         $controller->$action();

@@ -14,7 +14,9 @@
         "psr-4": {
             "Liloy\\Application\\Core\\" : "Application/Core",
             "Liloy\\Application\\Controller\\" : "Application/Controller",
-            "Liloy\\Application\\Model\\" : "Application/Model"
+            "Liloy\\Application\\Model\\" : "Application/Model",
+            "Liloy\\Application\\Config\\": "Application/Config",
+            "Liloy\\Application\\View\\" : "Application/View"
         }
     }
 }

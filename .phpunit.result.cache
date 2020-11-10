@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":109:{a:2:{s:7:"defects";a:1:{s:19:"RouterTest::testRun";i:4;}s:5:"times";a:1:{s:19:"RouterTest::testRun";d:0.01;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":150:{a:2:{s:7:"defects";a:2:{s:19:"RouterTest::testRun";i:4;s:7:"Warning";i:6;}s:5:"times";a:2:{s:19:"RouterTest::testRun";d:0.551;s:7:"Warning";d:0.001;}}}

@@ -11,9 +11,11 @@ return array(
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src/Prophecy'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'Liloy\\Application\\View\\' => array($baseDir . '/Application/View'),
     'Liloy\\Application\\Model\\' => array($baseDir . '/Application/Model'),
     'Liloy\\Application\\Core\\' => array($baseDir . '/Application/Core'),
     'Liloy\\Application\\Controller\\' => array($baseDir . '/Application/Controller'),
+    'Liloy\\Application\\Config\\' => array($baseDir . '/Application/Config'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

@@ -32,9 +32,11 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         ),
         'L' => 
         array (
+            'Liloy\\Application\\View\\' => 23,
             'Liloy\\Application\\Model\\' => 24,
             'Liloy\\Application\\Core\\' => 23,
             'Liloy\\Application\\Controller\\' => 29,
+            'Liloy\\Application\\Config\\' => 25,
         ),
         'D' => 
         array (
@@ -66,6 +68,10 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Liloy\\Application\\View\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Application/View',
+        ),
         'Liloy\\Application\\Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Application/Model',
@@ -77,6 +83,10 @@ class ComposerStaticInit3a4ed4d7676d71582166318fc6c2f15c
         'Liloy\\Application\\Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Application/Controller',
+        ),
+        'Liloy\\Application\\Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Application/Config',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

@@ -9,8 +9,8 @@ class RouterTest extends \PHPUnit\Framework\TestCase
     public $badRouter;
     public function setUp(): void
     {
-            $this->goodRouter = new Router('index/main');
-            $this->badRouter = new Router('index/mainn');
+        $this->goodRouter = new Router('/main/index');
+        $this->badRouter = new Router('/main/indexx');
     }
     public function tearDown(): void
     {
