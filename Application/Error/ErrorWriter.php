@@ -15,10 +15,11 @@ class ErrorWriter
         $time = new \DateTime('now');
         self::$time = $time->format('Y-m-d H:i:s');
     }
-    public static function execute(string $info, string $path = '../Application/Error/Reports/Report'): void
+    public static function execute
+        (string $info, string $path = '../Application/Error/Reports/Report'): void
     {
         self::prepare($path);
-        if(self::$file !== ''){
+        if (self::$file !== '') {
             self::$file .= "\n";
         }
         self::$file .= self::$time." - $info";

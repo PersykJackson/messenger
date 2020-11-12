@@ -20,18 +20,19 @@ class View
     private function prepare(): void
     {
             ob_start();
-            require_once $this->route['Controller'].'/'.$this->route['Action'].'.php';
+            require_once $this->route['Controller'].'/'.$this->route['Action'].
+                '.php';
             $this->view = ob_get_clean();
     }
     public function getView($vars = []): bool
     {
-       $vars['view'] = $this->view;
-       $vars['title'] = $this->route['Title'];
-       $vars['style'] = $this->style;
-       if(require_once 'layouts/'.$this->layout.'.php'){
-           return true;
-       };
-       return false;
+        $vars['view'] = $this->view;
+        $vars['title'] = $this->route['Title'];
+        $vars['style'] = $this->style;
+        if (require_once 'layouts/'.$this->layout.'.php') {
+            return true;
+        };
+        return false;
     }
 
 }

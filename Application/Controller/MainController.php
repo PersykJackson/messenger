@@ -1,6 +1,4 @@
 <?php
-
-
 namespace Liloy\Application\Controller;
 
 use Liloy\Application\Core\Controller;

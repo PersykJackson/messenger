@@ -1,6 +1,4 @@
 <?php
-
-
 namespace Liloy\Application\Config;
 
 
@@ -13,7 +11,7 @@ class Registry
 
     public static function getInstance(): self
     {
-        if(is_null(self::$instance)){
+        if (is_null(self::$instance)) {
             self::$instance = new Registry();
             self::$routes = require_once 'Routes.php';
         }

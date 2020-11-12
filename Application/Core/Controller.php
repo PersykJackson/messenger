@@ -19,9 +19,9 @@ class Controller
         $this->view = new View($route);
         $this->path = $this->route['Controller'].'.php';
         $model = 'Liloy\\Application\\Model\\'.ucfirst($this->route['Controller']);
-        if(class_exists($model)){
+        if (class_exists($model)) {
             $this->model = new $model();
-        }else{
+        } else {
             ErrorResponser::getError("Model $model not exist");
         }
     }
