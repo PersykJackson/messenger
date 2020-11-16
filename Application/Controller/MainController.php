@@ -9,6 +9,6 @@ class MainController extends Controller
 
     public function indexAction(): void
     {
-        $this->view->getView();
+        $this->view->getView(['news' => $this->model->getNews()]);
     }
 }

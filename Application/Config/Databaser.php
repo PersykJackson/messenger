@@ -9,9 +9,10 @@ class Databaser
     private $config;
     public function __construct()
     {
-        $this->config = require_once "DbConfig.php";
-        $this->pdo = new \PDO("mysql:dbname=$this->config['dbname'];host=
-        $this->config['host']", $this->config['user'], $this->config['password']);
+        $this->config = require "DbConfig.php";
+        $this->pdo = new \PDO("mysql:host={$this->config['host']};
+            dbname={$this->config['dbname']}", $this->config['user'],
+            $this->config['password']);
     }
     public function select(string $string, array $variables = []): array
     {

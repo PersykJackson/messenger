@@ -1,7 +1,7 @@
 <?php
 return [
     'host' => 'localhost',
-    'dbname' => '',
-    'user' => '',
+    'dbname' => 'messenger',
+    'user' => 'root',
     'password' => ''
 ];
